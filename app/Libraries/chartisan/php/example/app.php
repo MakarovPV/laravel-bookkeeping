@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-use App\Libraries\Chartisan\Chartisan;
+use App\Libraries\Chartisan\Php\Src\Chartisan;
 
 /**
  * Outputing JSON encoded data and

@@ -9,7 +9,6 @@ use App\Models\IncomeCategories;
 use App\Observers\UserObserver;
 use App\Observers\ExpensesCategoriesObserver;
 use App\Observers\IncomeCategoriesObserver;
-use ConsoleTVs\Charts\Registrar as Charts;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(Charts $charts)
+    public function boot()
     {
         date_default_timezone_set('Asia/Yekaterinburg');
         User::observe(UserObserver::class);

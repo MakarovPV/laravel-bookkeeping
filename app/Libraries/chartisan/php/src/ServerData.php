@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Libraries\Chartisan;
+namespace App\Libraries\Chartisan\Php\Src;
 
 /**
  * ServerData represents how the server is expected

@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace App\Http\Controllers\Charts;
 
-use App\Libraries\Chartisan\Chartisan;
+use App\Libraries\Chartisan\Php\Src\Chartisan;
 use App\Modules\Dates;
 use Illuminate\Http\Request;
 use App\Repositories\IncomeCategoriesRepository;

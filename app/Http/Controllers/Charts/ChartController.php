@@ -16,7 +16,7 @@ abstract class ChartController
     /**
      * Конвертация ответа в JSON
      *
-     * @param App\Libraries\Chartisan\Chartisan $data
+     * @param App\Libraries\Chartisan\Php\Src\Chartisan $data
      * @param int $code
      * @return \Illuminate\Http\JsonResponse
      */
