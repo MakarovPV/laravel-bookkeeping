@@ -19,7 +19,7 @@ services:
     volumes:
       - ./:/var/www
     depends_on:
-        - db
+      - db
     container_name: project_app
 
   db:
