@@ -11,9 +11,10 @@
 docker-compose up -d
 composer install
 ```
-Далее необходимо создать соединение с БД по порту 8101 и выполнить следующие команды:
+Далее необходимо переименовать .env.example в .env, создать соединение с БД по порту 8101 и выполнить следующие команды:
 
 ```
 docker exec -it project_app bash
+php artisan key:generate
 php artisan migrate
 ```
