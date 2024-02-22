@@ -5,12 +5,8 @@
 
 ## Запуск приложения
 
-Запустите следующие команды из корневой директории проекта.
+Запустите следующую команду из корневой директории проекта.
 
 ```
-docker-compose up -d
-docker exec -it project_app bash
-composer install
-cp .env.example .env
-php artisan load:all
+docker-compose up -d; docker exec -it project_app bash; composer install; cp .env.example .env; php artisan load:all
 ```
