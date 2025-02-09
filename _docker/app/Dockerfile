@@ -24,3 +24,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 
 WORKDIR /var/www
 
+COPY _docker/app/run.sh /usr/local/bin/run.sh
+RUN chmod +x /usr/local/bin/run.sh
+
+ENTRYPOINT ["/usr/local/bin/run.sh"]
+CMD ["php-fpm"]
+
